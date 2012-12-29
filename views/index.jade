@@ -1,0 +1,78 @@
+doctype 5
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(name="author", content="cbmeeks")
+		meta(name="description", content="...")
+		title= title
+
+		link(rel='stylesheet', href='http://cdn_files.s3.amazonaws.com/twitter_bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='http://cdn_files.s3.amazonaws.com/twitter_bootstrap/css/bootstrap-responsive.min.css')
+
+		style(type='text/css')
+			body { padding-top: 60px; }
+	body
+		div.navbar.navbar-fixed-top
+			div.navbar-inner
+				div.container-fluid
+					a(class="btn btn-navbar", data-toggle="collapse", data-target=".nav-collapse")
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+
+					a(class="brand", href="#") Loggr.io
+					
+					div.nav-collapse.collapse
+						p.navbar-text.pull-right 
+							| Logged in as 
+							a(class="navbar-link", href="#") cbmeeks
+
+						ul.nav
+							li.dropdown
+								a(class="dropdown-toggle", href="#", id="ddApplications", role="button", data-toggle="dropdown")
+									| Applications 
+									b.caret
+								ul(class="dropdown-menu", role="menu", aria-labelledby="ddApplications")
+									li
+										a(href="#", tabindex="-1") AppBuilder
+										a(href="#", tabindex="-1") Loggr.io
+										a(href="#", tabindex="-1") KKMS
+										a(href="#", tabindex="-1") WMS
+										a(href="#", tabindex="-1") YMS
+							li
+								a(href="#") Dashboard
+							li
+								a(href="#") Forms
+							li
+								a(href="#") Models
+							li
+								form(class="navbar-search pull-left")
+									input(class="search-query", placeholder="search...", type="text")
+
+
+		div.navbar.navbar-fixed-bottom.navbar-inverse
+			div.navbar-inner
+				div.container-fluid
+					a(class="btn btn-navbar", data-toggle="collapse", data-target=".nav-collapse")
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+
+					a(class="brand", href="#") AppBuilder
+
+					div.nav-collapse.collapse
+						p.navbar-text.pull-right 
+							| &copy; 2012 
+							a(class="navbar-link", href="http://signaldev.com", target="_blank") SignalDEV
+
+
+		div.container-fluid
+			div.row-fluid
+				div.span2
+					| Hello
+				div.span10
+					| stuff here
+
+		script(src="http://code.jquery.com/jquery-latest.js")
+		script(src="http://cdn_files.s3.amazonaws.com/twitter_bootstrap/js/bootstrap.min.js")
